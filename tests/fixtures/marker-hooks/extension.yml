@@ -1,0 +1,39 @@
+schema_version: "1.0"
+
+extension:
+  id: "marker-hooks"
+  name: "Marker Hooks"
+  version: "0.0.1"
+  description: "Test fixture: each hook appends one line to .marker-log in the project root."
+  author: "test"
+  repository: "https://example.invalid/marker-hooks"
+  license: "MIT"
+
+requires:
+  speckit_version: ">=1.1.3"
+
+provides:
+  commands:
+    - name: "speckit.marker-hooks.after-specify"
+      file: "commands/after-specify.md"
+      description: "Append an after_specify marker"
+    - name: "speckit.marker-hooks.before-clarify"
+      file: "commands/before-clarify.md"
+      description: "Append a before_clarify marker"
+    - name: "speckit.marker-hooks.after-clarify"
+      file: "commands/after-clarify.md"
+      description: "Append an after_clarify marker"
+
+hooks:
+  after_specify:
+    command: "speckit.marker-hooks.after-specify"
+    optional: false
+    description: "Marker"
+  before_clarify:
+    command: "speckit.marker-hooks.before-clarify"
+    optional: false
+    description: "Marker"
+  after_clarify:
+    command: "speckit.marker-hooks.after-clarify"
+    optional: false
+    description: "Marker"

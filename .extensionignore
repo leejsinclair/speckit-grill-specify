@@ -1,0 +1,11 @@
+specs/
+docs/
+tests/
+scripts/dev/
+.specify/
+.claude/
+.agents/
+skills-lock.json
+Makefile
+CONTRIBUTING.md
+.gitignore

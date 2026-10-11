@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0",
+  "presets": {
+    "c4-model": {
+      "version": "0.2.0",
+      "source": "local",
+      "manifest_hash": "sha256:8e642cc5358340c2c55155e43a9663c04762b0870890a0b608c1f3aacbe1313f",
+      "enabled": true,
+      "priority": 10,
+      "registered_commands": {
+        "claude": [
+          "speckit.plan"
+        ]
+      },
+      "registered_skills": {
+        "claude": [
+          "speckit-plan"
+        ]
+      },
+      "installed_at": "2026-10-10T21:26:58.464794+00:00"
+    },
+    "integrated-tdd": {
+      "version": "0.1.0",
+      "source": "local",
+      "manifest_hash": "sha256:08a03d26800c0d9799b5108295665bc6b2b407b45dd94be0a7659f235fd6a4aa",
+      "enabled": true,
+      "priority": 10,
+      "registered_commands": {
+        "claude": [
+          "speckit.plan",
+          "speckit.tasks",
+          "speckit.analyze",
+          "speckit.implement"
+        ]
+      },
+      "registered_skills": {
+        "claude": [
+          "speckit-plan",
+          "speckit-tasks",
+          "speckit-analyze",
+          "speckit-implement"
+        ]
+      },
+      "installed_at": "2026-10-10T21:28:50.158889+00:00"
+    }
+  }
+}

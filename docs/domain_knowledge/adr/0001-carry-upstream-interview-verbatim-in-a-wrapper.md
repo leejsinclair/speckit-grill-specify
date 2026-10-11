@@ -1,0 +1,3 @@
+# Carry the upstream interview verbatim inside a wrapper
+
+Spec Kit extensions cannot depend on one another, so Specify Grill has to ship its own copy of the upstream with-docs interview (`yoshi1220/speckit-grill-me` v1.0.1). We keep that text verbatim and put everything of ours — the grill-setting check, the opening and its skip choice, the non-interactive exit, the nested-hook rule, the grilled-on label and the outcome report — in a wrapper around it, with the single in-text change being the clarify-hook rule that must differ in a nested run. We rejected a merged, freely edited copy because every upstream release would then need a hand merge and equivalence with upstream could no longer be shown by a diff.

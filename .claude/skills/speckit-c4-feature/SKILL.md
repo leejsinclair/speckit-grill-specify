@@ -1,0 +1,1 @@
+../../../.specify/extensions/c4/.specify-dev/agent-commands/claude/speckit-c4-feature/SKILL.md
